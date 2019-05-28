@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 
-
 const DataRow = (props) => {
-	return (
+	if(props.data.slot%2 !==0){
+		return (
+			<div className="row table-row alert alert-success">
+				<div className="col-4">{props.data.registration}</div>
+				<div className="col-4">{props.data.color}</div>
+				<div className="col-2">{props.data.slot}</div>
+				<div className="col-2"><button className="btn btn-sm btn-danger" onClick={() => props.onClick(props.data.slot)}>Exit</button></div>
+			</div>
+		)
+	}
+	else{
+		return(
 		<div className="row table-row">
 			<div className="col-4">{props.data.registration}</div>
 			<div className="col-4">{props.data.color}</div>
 			<div className="col-2">{props.data.slot}</div>
 			<div className="col-2"><button className="btn btn-sm btn-danger" onClick={() => props.onClick(props.data.slot)}>Exit</button></div>
-		</div>
-	)
+		</div>)
+	}
 }
 
 const Filters = (props) => {
