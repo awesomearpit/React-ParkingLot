@@ -7,9 +7,9 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
-    "react-scripts": "^2.1.1",
+    "react-scripts": "^5.0.1",
     "redux": "^4.0.0",
-    "serve": "^9.2.0"
+    "serve": "^14.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
